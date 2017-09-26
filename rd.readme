@@ -1,0 +1,7 @@
+users should have pwd and username
+user can login/logout/signup
+user can ask a question
+  question has title and body
+users can answer questions
+  answers have body
+user who asked a a question can mark an answer as accepted

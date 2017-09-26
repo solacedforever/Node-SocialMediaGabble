@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <meta charset="UTF-8" /> -->
+  <title>user Likes page</title>
+</head>
+<body>
+  <div class="navBar">
+    <a href="/newGabble">New Gabble</a>
+    <a href="/gabble">Gabbles</a>
+    <form method="POST" action="/logout">
+      <button>Log Out</button>
+    </form>
+    </div>
+  <h1>These Users Like Your Post</h1>
+  {{ #likes}}
+      <div class = 'like'>
+        <h3>{{username}}<h3>
+        </div>
+  {{ /likes}}
+</body>
+</html>

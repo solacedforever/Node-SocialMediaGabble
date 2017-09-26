@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css"> -->
+  <title>Profile page</title>
+</head>
+<body>
+  <div class="navBar">
+    <a href="/newGabble">New Gabble</a>
+    <a href="/gabble">Gabbles</a>
+    <form method="POST" action="/logout">
+      <button>Log Out</button>
+    </form>  </div>
+  <h1>Hello {{currentUser.username}} </h1>
+  <form  class="newGabble" action="/newGabble" method="POST">
+    <input type = 'text', name='title' placeholder=" Gabb About?">
+    <input type="text" name='message' placeholder="Gabb Away!">
+    <button>Gabb</button>
+  </form>
+</body>
+</html>
